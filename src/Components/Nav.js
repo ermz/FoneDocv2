@@ -1,12 +1,15 @@
 import "../CompStyles/Nav.css";
 import logo from "../images/fonedoc-logo.png";
+import logoTitle from "../images/fonedoc-title.png";
 
 function Nav() {
     return (
         <nav>
-            <img src={logo} />
-            <h3>FoneDoc</h3>
-            <h4>Mobile Phone Repair</h4>
+            <div class="logo-holder">
+                <img src={logo} />
+                <img src={logoTitle} />
+            </div>
+            <h3>Mobile Phone Repair</h3>
         </nav>
     )
 }
