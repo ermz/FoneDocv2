@@ -1,0 +1,11 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #fecc34;
+    padding: 30px 25px;
+    height: 90px;
+}
+
+nav > img {
+    height: 30px;
+}
