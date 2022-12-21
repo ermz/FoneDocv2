@@ -4,6 +4,12 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Add background image of fonedoc logo
+    Washed out look
+    use the following
+    background-repeat
+    background-position
+*/
 .service-comp {
     display: flex;
     flex-direction: column;
@@ -24,4 +30,9 @@ h3 {
 .service-list > li {
     line-height: 19px;
     padding-block: 10px
+}
+
+.service-list > li::marker {
+    color: #fecc34;
+    font-size: 1.4em;
 }
