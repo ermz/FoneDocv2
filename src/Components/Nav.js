@@ -9,6 +9,11 @@ function Nav() {
                 <img src={logo} />
                 <img src={logoTitle} />
             </div>
+            <div>
+                <button>Services</button>
+                <button>About us</button>
+                
+            </div>
             <h3>Mobile Phone Repair</h3>
         </nav>
     )
