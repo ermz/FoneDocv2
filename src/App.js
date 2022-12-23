@@ -9,27 +9,39 @@ import phonepic from "./images/phonerepair.png";
 import consolepic from "./images/consolerepair.png";
 
 function App() {
+  let cardProps = [
+    {
+      img: smartwatchpic,
+      name: "SmartWatch",
+      cost: "60+"
+    },
+    {
+      img: phonepic,
+      name: "Phone",
+      cost: "70+"
+    },
+    {
+      img: consolepic,
+      name: "Console",
+      cost: "100+"
+    }
+  ]
+
+  let cardsArray = cardProps.map((cardInfo) => {
+    return  <Card 
+      img={cardInfo.img}
+      name={cardInfo.name}
+      cost={cardInfo.cost}
+    />
+  })
   return (
     <div className="App">
       <div className="banner">
         <Nav />
         <Main />
       </div>
-      <Card 
-        img={smartwatchpic}
-        name="SmartWatch"
-        cost="60+"
-      />
-      <Card 
-        img={phonepic}
-        name="Phone"
-        cost="70+"
-      />
-      <Card 
-        img={consolepic}
-        name="Console"
-        cost="100+"
-      />
+      {cardsArray}
+      
     </div>
   );
 }
