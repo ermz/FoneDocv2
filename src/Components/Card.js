@@ -1,16 +1,26 @@
 import "../CompStyles/Card.css";
-import cardpic from "../images/smartwatchrepair.png";
 
-export default function Card () {
+export default function Card (props) {
+    // const date = new Date()
+    // const hours = date.getHours()
+    // let timeOfDay
+
+    // if (hours < 12) {
+    //     timeOfDay = "morning"
+    // } else if (hours >= 12 && hours < 17) {
+    //     timeOfDay = "afternoon"
+    // } else {
+    //     timeOfDay = "night"
+    // }
     return (
         <div className="card">
-            <img src={cardpic} className="card-image" />
+            <img src={props.img} className="card-image" />
             <div className="card-stats">
                 <span>$</span>
-                <span>60+</span>
+                <span>{props.cost}</span>
             </div>
             <p>All <strong>Apple</strong> smartwatches</p>
-            <p>Screen, battery, etc.</p>
+            <p>{props.name}</p>
         </div>
     )
 }
