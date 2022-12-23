@@ -11,8 +11,10 @@ import consolepic from "./images/consolerepair.png";
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Main />
+      <div className="banner">
+        <Nav />
+        <Main />
+      </div>
       <Card 
         img={smartwatchpic}
         name="SmartWatch"
