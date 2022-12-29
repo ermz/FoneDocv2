@@ -16,3 +16,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}

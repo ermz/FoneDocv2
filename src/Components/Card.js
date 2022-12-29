@@ -12,15 +12,22 @@ export default function Card (props) {
     // } else {
     //     timeOfDay = "night"
     // }
+    let badgeText
+    if (props.available === false) {
+        badgeText = "UNAVAILABLE"
+    } else if (props.sale > 0) {
+        badgeText = "SALE"
+    }
     return (
         <div className="card">
+            {badgeText && <div className="card-badge">{badgeText}</div>}
             <img src={props.img} className="card-image" />
             <div className="card-stats">
                 <span>$</span>
                 <span>{props.cost}</span>
             </div>
             <p>All <strong>Apple</strong> smartwatches</p>
-            <p>{props.name}</p>
+            <p className="card--title">{props.name}</p>
         </div>
     )
 }
