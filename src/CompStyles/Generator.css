@@ -6,8 +6,20 @@
 
 .form-button {
     grid-column: 1 / -1;
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #711f8d 1.14%, #A818DA 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .main-form {
     padding: 36px;
 }
+
+.form-input {
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+}
+
